@@ -1,0 +1,109 @@
+ Which components have you used in Load Runner?
+->	1> Virtual User Generator (VuGen):
+	VuGen is used to create scripts that simulate user interactions with an application. It supports multiple scripting languages, including C, Java, and JavaScript, and allows users to 	record, edit, and enhance scripts for performance testing.
+	2> Controller:
+	The Controller is a central component that orchestrates and manages the execution of load tests. It allows users to define scenarios, set the number of virtual users, configure load 	distribution, and monitor test execution.
+	3> Analysis:
+	The Analysis component is used to analyze and interpret the results of load tests. It provides various graphs, reports, and metrics to help identify performance bottlenecks and 	assess the application's behavior under different conditions.
+	
+ How can you set the number of Vusers in Load Runner?
+-> 	Open LoadRunner Controller.
+	Create or open a scenario.
+	Navigate to the "Scenario" tab.
+	Set the desired number of Vusers.
+	Optionally configure additional settings.
+	Save the scenario.
+	Run the scenario to start the test.
+	Monitor test execution in real-time using the Controller.
+
+ What is Correlation?
+->	process of identifying and managing dynamic values that change during user interactions with an application.
+	alsoin other words, Correlation, in the context of software testing, refers to the process of identifying and handling dynamic values or parameters in recorded scripts to ensure 	accurate and realistic test execution. During the recording of a script, certain values within the application may dynamically change with each user interaction or session. These 	dynamic values, such as session IDs, authentication tokens, or timestamps, are crucial for maintaining state and security in web applications.
+
+ What is the process for developing a Vuser Script?
+->	Recording:Use the Virtual User Generator (VuGen) to record user interactions with the application.
+	Script Generation:
+	Generate a script based on the recorded interactions. The script contains instructions for simulating user actions.
+	Enhancement:
+	Enhance the script by adding parameterization, correlation for dynamic values, and any necessary logic.
+	Parameterization:
+	Identify and parameterize input data to create realistic test scenarios. This may involve replacing static values with variables.
+	Correlation:
+	Identify and handle dynamic values (e.g., session IDs) using correlation techniques to ensure accurate script execution.
+	Verification:
+	Verify that the script runs successfully and accurately simulates user behavior.
+	Debugging:
+	Debug the script to address any errors or issues that may arise during execution.
+	Script Customization:
+	Customize the script as needed for specific test scenarios, including adding validation points and adapting to dynamic content.
+	Run and Monitor:
+	Run the script using the LoadRunner Controller and monitor its execution to identify any performance bottlenecks or issues.
+	Analysis:
+	Analyze the results using LoadRunner Analysis to gain insights into system performance and identify areas for improvement.
+
+ How Load Runner interacts with the application?
+	LoadRunner interacts with the application by simulating virtual users (Vusers) that mimic real users' behavior when interacting with the application. The process involves:
+	Scripting:
+	Use Virtual User Generator (VuGen) to create scripts that simulate user interactions, including navigating through web pages, submitting forms, and making requests to the 	application.
+	Controller:
+	Design test scenarios in the Controller, specifying the number of virtual users, load distribution, and other test parameters.
+	Load Generators:
+	Execute the scripts on load generators, simulating the specified number of virtual users and generating the desired load on the application.
+	Application Under Test (AUT):
+	Virtual users interact with the Application Under Test (AUT), sending requests and receiving responses as real users would.
+	Monitoring:
+	LoadRunner monitors the performance of the application during test execution, collecting metrics such as response times, throughput, and resource utilization.
+	Analysis:
+	After test execution, use LoadRunner Analysis to interpret the collected data, identify performance bottlenecks, and analyze the system's behavior.
+
+ How many VUsers are required for load testing?
+	The number of Virtual Users (Vusers) required for load testing depends on several factors, and there isn't a one-size-fits-all answer. The optimal number of Vusers is influenced by 	the following considerations:
+	Application Requirements:
+	Business Scenarios:
+	Performance Goals:
+	Scalability Requirements:
+	and many more
+
+ What isthe relationship between Response Time and Throughput?
+-> 	Response Time:
+	Definition: Response time, also known as latency, is the time taken for a system to respond to a user's request. It includes the time taken for the server to process the request 	and generate a response, as well as the time taken for that response to reach the user.
+	Measurement: Response time is typically measured in milliseconds (ms) or seconds (s).
+	User Perspective: Response time is critical from the user's perspective, representing the perceived speed and responsiveness of the application. A lower response time is generally 	preferable as it implies faster system performance
+	Throughput:
+	Definition: Throughput is the rate at which a system processes a certain number of transactions or requests over a given period. It represents the system's capacity to handle a 	specific workload.
+	Measurement: Throughput is measured in transactions per second (TPS) or requests per second (RPS).
+	System Perspective: Throughput is more of a system-level metric, indicating the system's ability to handle a certain load or number of requests within a specified time 
+
+ What is Automation Testing?
+->	Automation testing is a software testing technique that uses specialized tools and scripts to automate the execution of test cases and verify the expected outcomes of an 	application. The primary goal of automation testing is to enhance the efficiency, repeatability, and accuracy of the testing process
+
+ Which Are The Browsers Supported By Selenium Ide?
+->	Mozilla Firefox:
+	Google Chrome:		
+	Microsoft Edge:
+ What are the benefits of Automation Testing?
+->	the benefits of automation testing include faster test execution, reusability of test scripts, parallel execution, increased test coverage, support for continuous integration, 	cost-effectiveness, improved accuracy, early defect detection, enhanced product quality, and better alignment with agile and DevOps practices. Automation contributes to overall 	efficiency and reliability in the software testing process.
+ What are the advantages of Selenium?
+->	the advantages of Selenium include cross-browser compatibility, support for multiple programming languages, platform independence, open-source nature, extensibility, a large 	community for support, parallel test execution, integration with testing frameworks, support for both web and mobile testing, robust browser automation capabilities, headless 	browser testing support, cost-effectiveness
+ Why testers should opt for Selenium and not QTP?
+->	Selenium 					QTP
+	Open source, free to use, and free of charge.   Commercial.
+	Highly extensible Limited 			add-ons
+	Can run tests across different browsers 	Can only run tests in Firefox , Internet Explorer and Chrome					
+	Supports various operating systems 		Can only be used in Windows
+	Supports mobile devices 			Supports mobile devise using 3rd party software				
+	Can execute tests while the browser is 		Needs to have the application under test
+	minimized to be visible on the desktop
+	Can execute tests in parallel. 			Can only execute in parallel but using Quality Center which is 
+							again a paid product.
+
+			
+	
+
+
+
+
+
+
+
+a paid product.
